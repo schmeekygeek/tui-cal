@@ -93,7 +93,9 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 }
 
 func (m model) View() string {
-  s := "  "
+  s := "Use arrow keys to navigate the cursor\n"
+  s += "Use enter to select\n"
+  s += "  "
   s += strings.Repeat(" ", m.cursorPos.x * 2)
   s += "."
   s += "\n"
